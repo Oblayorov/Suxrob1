@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+    cursor: pointer;
+}
+body{
+background-color: #DCDCDC;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    width: 130px;
+    height: 130px;
+    background-color: white;
+    float: left;
+    margin-left: 3px;
+}
+.fa-solid{
+  margin-left: 50px;
+  margin-top: 25px;
+}
+h3, h4 {
+    text-align: center;
+    font-family: sans-serif;
+}
+h4{
+    margin-top: -15px;
+}
+.content:hover{
+    color: peru;
+    border-bottom: peru 5px solid;
+    border-top: peru 5px solid;
+}
+.dropdown{
+    position: absolute;
+    width: 265px;
+    margin-left: -40px;
+    margin-top: 25px;
+    display: none;
+    color: black;
+}
+.dropdown-item{
+    /* list-style: none;  */
+    background-color: white;
+    padding: 2px 30px;
+    font-size: 15pt;
+    border-bottom: #DCDCDC 1px solid;
+    padding-left: -20px; 
+}
+.content:nth-child(5):hover .dropdown{
+    display: block;
+}
+.dropdown-item:hover{
+    color: peru;
+}
+.CONTENT{
+ margin-left: 10%;
+ margin-top: 6%;
+}
+.kvadrat{
+    width: 70px;
+    height: 70px;
+    background-color: peru;
+margin-top: 155px;
+margin-left: 25px;
+border-radius: 5px;
+color: white;
+}
+</style>
+<body>
+<div class="CONTENT">
+     <div class="content">
+        <i class="fa-solid fa-house-chimney fa-2x"></i>
+        <h3>HOME</h3>
+        <h4>sweet home<h4>
+    </div>
+
+     <div class="content">
+        <i class="fa-solid fa-pen-to-square fa-2x"></i>
+        <h3>ABOUT US</h3>
+        <h4>sweet home</h4>
+     </div>
+
+     <div class="content">
+        <i class="fa-solid fa-gift fa-2x"></i>
+        <h3>FEATURES</h3>
+        <h4>sweet home</h4>
+     </div>
+
+     <div class="content">
+        <i class="fa-solid fa-earth-asia fa-2x"></i>
+        <h3>NEWS</h3>
+        <h4>sweet home</h4>
+     </div>
+
+     <div class="content">
+        <i class="fa-solid fa-comments fa-2x"></i>
+        <h3>BLOG
+            <ul class="dropdown">
+                <li class="dropdown-item"><i class="fa-solid fa-earth-asia" style="margin-left: -130px; padding: 0 10px;"></i>Mission</li>
+                <li class="dropdown-item"><i class="fa-solid fa-user-group" style="margin-left: -110px; padding: 0 10px;"></i>Our Team</li>
+                <li class="dropdown-item"><i class="fa-solid fa-trophy" style="margin-left: -120px; padding: 0 10px;"></i>Rewards</li>
+                <li class="dropdown-item"><i class="fa-solid fa-certificate" style="margin-left: -90px; padding: 0 10px;"></i>Certificates</li>
+            </ul>
+        </h3>
+        <h4>sweet home<h4>
+     </div>
+
+     <div class="content">
+        <i class="fa-solid fa-image fa-2x"></i>
+        <h3>PORTFOLIO</h3>
+        <h4>sweet home</h4>
+     </div>
+
+     <div class="content">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+        <h3>CONTACTS</h3>
+        <h4>sweet home</h4>
+     </div>
+
+     <div class="content">
+        <div class="kvadrat"><i class="fa-solid fa-magnifying-glass fa-2x" style="margin-left: 22px; margin-top: 21px;"></i></div>
+     </div>
+</div>
+    
+</body>
+</html>

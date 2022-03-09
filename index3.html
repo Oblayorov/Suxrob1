@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculyator</title>
+</head>
+<style>
+    body{
+    padding: 0;
+    margin: 0;
+    background-color: #454545;
+}
+form{
+margin-left: 480px;
+margin-top: 10vh;
+width: 370px;
+height: 450px;
+padding: 20px;
+background-color: blue;
+border-radius: 15px;
+box-shadow: 5px 5px 15px 2px rgba(148, 148, 148, .1);
+}
+h1{
+    text-align: center;
+    color: darkgoldenrod;
+    font-size: 3em;
+}
+#display{
+    margin: 15px 10px;
+    padding: 10px 80px;
+    font-size: 28px;
+    width: 250px;
+    color: rgb(162, 162, 162);
+    border-radius: 10px;
+    margin-left: 9px;
+}
+input[type=button] {
+    font-family: monospace;
+    padding: 0;
+    width: 85px;
+    height: 85px;
+    font-size: 40px;
+    /* border: 0; */
+    border-radius: 10px;
+    box-shadow: rgba(148, 148, 148, .1); 
+    border-color: gold;
+
+}
+input[type=button]:hover {
+    color: rgb(0, 214, 252);
+    background: rgb(2,0,36);
+    background: linear-gradient(298deg, rgba(2,0,36,1) 0%, rgba(5,75,246,0.908000700280112) 18%, rgba(181,7,7,1) 100%);
+}
+</style>
+<body>
+    <h1>Kalkulyator yasash</h1>
+    <form name="calculyator" style="margin-top: -10px; margin-left: 100;">
+        <table style="margin-top: 1px; margin-left: -3px;">
+            <tr>
+                <td colspan="4"></td>
+                <input type="text" name="display" id="display" disabled placeholder="0" style="background-color: cornsilk; color: black; padding-left: 18px;">
+            </tr>
+            <tr>
+                <td><input type="button" value="7" name="seven" onclick="calculyator.display.value += '7'" style="margin-left: 10px;"></td>
+                <td><input type="button" value="8" name="eight" onclick="calculyator.display.value += '8'" ></td>
+                <td><input type="button" value="9" name="nine" onclick="calculyator.display.value += '9'" ></td>
+                <td><input type="button" value="*" name="times" class="operator" onclick="calculyator.display.value += '*'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" name="four" onclick="calculyator.display.value += '4'"style="margin-left: 10px;" ></td>
+                <td><input type="button" value="5" name="five" onclick="calculyator.display.value += '5'" ></td>
+                <td><input type="button" value="6" name="six" onclick="calculyator.display.value += '6'" ></td>
+                <td><input type="button" value="-" name="minus" class="operator" onclick="calculyator.display.value += '-'" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" name="one" onclick="calculyator.display.value += '1'"style="margin-left: 10px;" ></td>
+                <td><input type="button" value="2" name="two" onclick="calculyator.display.value += '2'" ></td>
+                <td><input type="button" value="3" name="three" onclick="calculyator.display.value += '3'" ></td>
+                <td><input type="button" value="+" name="plus" class="operator" onclick="calculyator.display.value += '+'" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="c" name="clear" onclick="calculyator.display.value = ''" style="margin-left: 10px;"></td>
+                <td><input type="button" value="0" name="zero" onclick="calculyator.display.value += '0'" ></td>
+                <td><input type="button" value="=" name="doit" onclick="calculyator.display.value = eval(calculyator.display.value)" ></td>
+                <td><input type="button" class="operator" value="/"  name="div" class="operator" onclick="calculyator.display.value += '/'" ></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

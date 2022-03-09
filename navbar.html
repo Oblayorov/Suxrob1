@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="navbar.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .navbar{
+    height: 90px;
+    background-color: #229ED9;
+  position: relative;
+}
+.box{
+   float: left;
+   font-size: 25px;
+   color: white;
+   padding: 15px;
+  margin-top: -47px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #50bcee;
+    padding: 10px 15px;
+    transition: 0.7s;
+    position: initial;
+    border-radius: 5px;
+}
+.box1{
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+    padding-top: 25px;
+}
+.canvas{
+    width: 450px;
+    height: 80px;
+    background-color: #229ED9;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+}
+.fa-solid{
+color: white;    float: left;
+    margin-left: 48%;
+    margin-top: 25px;
+}
+.tortburchak{
+    width: 450px;
+    height: 430px;
+    margin-left: 70px;
+    background-color: rgb(64, 68, 83);
+    margin-top: -20px;
+}
+h2{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+h2:hover {
+    color: blue;
+    cursor: pointer;
+}
+h1{
+    margin-left: 43%;
+    font-family: sans-serif;
+    font-size: 53px;
+    margin-top: -400px;
+    color: #229ED9;
+}
+</style>
+<body>
+    <div class="navbar">
+        <div class="box1" style="margin: auto 5%">CodingNepal</div>
+        <div class="box" style="margin-left: 55%"><a href="https://www.google.com/search?q=home&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi7gtPwlJv2AhU7CRAIHWLYCFwQ_AUoAXoECAMQAw&biw=1366&bih=657&dpr=1">Home</a></div>
+        <div class="box"><a href="https://www.google.com/search?q=about&tbm=isch&ved=2ahUKEwjN8PCRlZv2AhVCYBoKHflTCkMQ2-cCegQIABAA&oq=about&gs_lcp=CgNpbWcQAzIECAAQQzIECAAQQzIECAAQQzIFCAAQgAQyBAgAEEMyBQgAEIAEMgQIABBDMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToHCAAQsQMQQzoICAAQsQMQgwFQ1AhY0ixg6DNoAHAAeACAAeQBiAGLCpIBBTAuOC4xmAEAoAEBqgELZ3dzLXdpei1pbWewAQDAAQE&sclient=img&ei=HvUYYs3pLMLAafmnqZgE&bih=657&biw=1366">About</a></div>
+        <div class="box"><a href="https://www.google.com/search?q=services&tbm=isch&ved=2ahUKEwi1g_OelZv2AhUIvCoKHa5eDoQQ2-cCegQIABAA&oq=services&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgAEEM6BAgAEAM6CAgAEIAEELEDOggIABCxAxCDAToLCAAQgAQQsQMQgwFQsQhYtjpglkVoAXAAeAKAAYoCiAH9D5IBBjAuMTMuMZgBAKABAaoBC2d3cy13aXotaW1nsAEAwAEB&sclient=img&ei=OvUYYrX-AYj4qgGuvbmgCA&bih=657&biw=1366">Services</a></div>
+        <div class="box"><a href="https://www.google.com/search?q=contact&oq=contact&aqs=chrome..69i57j46i131i199i291i433i512j0i512l2j46i175i199i512j0i512l4j46i175i199i512.24535j0j9&sourceid=chrome&ie=UTF-8">Contact</a></div>
+        <div class="box"><a href="https://www.google.com/search?q=feedback&ei=gfUYYuOONemArwT4t5GICA&oq=feed&gs_lcp=Cgdnd3Mtd2l6EAMYADIECAAQQzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMggILhCABBDUAjIFCAAQgAQyBQgAEIAEMgUIABCABDoHCAAQRxCwAzoHCAAQsAMQQzoKCAAQ5AIQsAMYADoMCC4QyAMQsAMQQxgBOg0ILhDHARCjAhDUAhBDOhEILhCABBCxAxCDARDHARDRAzoKCAAQ6gIQtAIQQzoKCC4Q6gIQtAIQQzoLCAAQgAQQsQMQgwE6EQguEIAEELEDEIMBEMcBEKMCOg0ILhCxAxDHARCvARBDOg0ILhDHARDRAxDUAhBDOggILhCABBCxAzoRCC4QgAQQsQMQxwEQ0QMQ1AI6BQguEIAESgQIQRgASgQIRhgBUOsGWOEhYNI6aAFwAHgCgAHbAogBhBCSAQgwLjEwLjAuMZgBAKABAbABCsgBEsABAdoBBggAEAEYCdoBBggBEAEYCA&sclient=gws-wiz">Feedback</a></div>
+    </div>
+    
+    <div class="canvas">
+        <p style="float: left;">CoddingNepal</p>
+        <i class="fa-solid fa-align-justify fa-2x" style=" padding: -20px 0px;"></i>
+    </div>
+
+    <div class="tortburchak">
+        <h2 style="padding: 20px;">Home</h2>
+        <h2>About</h2>
+        <h2>Services</h2>
+        <h2>Contact</h2>
+        <h2>Feedback</h2>
+    </div>
+   <h1>RESPONSIVE <br> <span style="font-size: 65px;">NAVIGATION BAR <br> <span style="font-size: 53px; color: white; background-color: #229ED9;">HTML AND CSS ONLY</span></span></h1>
+</body>
+</html>
